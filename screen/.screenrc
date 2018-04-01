@@ -1,0 +1,34 @@
+startup_message off
+vbell off
+altscreen on
+
+defscrollback 200000
+
+# Set screen with 256 colors
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+
+# Type 1
+#caption always "%{= wk} %{= KY} [%n]%t @ %H %{-} %= %{= KR} %l %{-} | %{= KG} %Y-%m-%d %{-} "
+#hardstatus alwayslastline " %-Lw%{= Bw}%n%f %t%{-}%+Lw %=| %0c:%s "
+
+# Type 2
+caption always "%{=u .G} %-w%<%{=ub .y}%n %t%{=u .G}%+w "
+hardstatus alwaysignore
+hardstatus alwayslastline "%{= .K} [%l]%<%=%{= .W}@%H %=%{= .y} %Y/%m/%d%{= .m} %0c:%s "
+
+
+# Type 3
+#caption always "%{=u .G} %-w%<%{=ub .y}%n %t%{=u .G}%+w "
+#hardstatus alwaysignore
+#hardstatus alwayslastline "%{= .K} [%l]%<%=%{= .W}@%H %=%{= .y} %Y/%m/%d%{= .m} %C %A"
+
+
+# Type 
+#caption always "%{= Wk}%-w%{= Bw}%n %t%{-}%+w %-= %c"
+
+# Long time I had this in my private screenrc file. But many people
+# seem to want it (jw):
+# we do not want the width to change to 80 characters on startup:
+# on suns, /etc/termcap has :is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;3;4;6l:
+termcap xterm 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
+terminfo xterm 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'

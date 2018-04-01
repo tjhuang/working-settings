@@ -1,19 +1,25 @@
 "
 " VIMRC from Jacob Huang (tjhuang.lec@gmail.com)
 "
-" Latest Update at Apr. 1, 2018
+" Latest Update at Aug. 3, 2016
 
+" Include 'pathogen' (plugin management tool)
 execute pathogen#infect()
 
+set nocompatible
+
+" Code indentation setting
 set autoindent
 set tabstop=8
 set shiftwidth=8
 
-set nocompatible
-set backspace=indent,eol,start
-set showcmd
+" Bottom information setting
 set showmode
+set showcmd
 set ruler
+
+set scrolloff=5
+set backspace=indent,eol,start
 set history=100
 set background=dark
 set t_Co=256
@@ -42,15 +48,15 @@ set termencoding=utf-8
 set fileencodings=utf-8
 
 " Configure C/C++ syntax
-autocmd BufRead,BufNewFile *.c,*.cpp,*.h    set cindent
-autocmd BufRead,BufNewFile *.c,*.cpp,*.h    set filetype=c
+autocmd BufRead,BufNewFile *.c,*.cpp,*.h	set cindent
+autocmd BufRead,BufNewFile *.c,*.cpp,*.h	set filetype=c
 
 " Configure Python syntax
-autocmd BufRead,BufNewFile *.py    set smartindent
-autocmd BufRead,BufNewFile *.py    set expandtab
-autocmd BufRead,BufNewFile *.py    set tabstop=4
-autocmd BufRead,BufNewFile *.py    set shiftwidth=4
-autocmd BufRead,BufNewFile *.py    set filetype=python
+autocmd BufRead,BufNewFile *.py		set smartindent
+autocmd BufRead,BufNewFile *.py		set expandtab
+autocmd BufRead,BufNewFile *.py		set tabstop=4
+autocmd BufRead,BufNewFile *.py		set shiftwidth=4
+autocmd BufRead,BufNewFile *.py		set filetype=python
 
 " Set cursor line
 set cursorline
@@ -65,6 +71,7 @@ highlight LineNr term=bold cterm=NONE ctermfg=darkgrey ctermbg=none gui=NONE gui
 " Set constant value to be red and comment to be grey color
 highlight Constant ctermfg=DarkRed
 highlight Comment ctermfg=DarkGrey
+
 
 
 " Edit binary using "xxd" format
