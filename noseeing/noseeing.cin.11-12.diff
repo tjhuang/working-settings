@@ -1,0 +1,3769 @@
+--- noseeing.cin.11	2008-05-03 09:02:31.000000000 +0800
++++ noseeing.cin	2008-10-19 09:00:29.000000000 +0800
+@@ -1,6 +1,6 @@
+-%ename   Noseeing	# 080503
++%ename   Noseeing	# 081019
+ %prompt  無啥味		# 整理：李果正（Edward G.J. Lee）
+-%selkey 1234567890
++%selkey 1234567890	# 建議加字者，記於每個字後附註。
+ %space_style 1
+ %keyname begin
+ a Ａ
+@@ -48,7 +48,7 @@
+ aadk  鋃
+ aado  鎗
+ aae   鐱
+-aaf   錢	# U+9322
++aaf   錢
+ aaj   鏵
+ aaja  鎛
+ aajq  鋪
+@@ -3073,7 +3073,9 @@
+ delv  冕
+ delr  旽
+ den   昺
++den   昞
+ denb  昺
++denb  昞
+ denf  鴠
+ denm  昜
+ denp  曖
+@@ -3938,6 +3940,7 @@
+ eguf  鶢
+ egx   妥
+ eh    群
++eh    羣
+ ehd   嵙
+ ehg   崣
+ ehgu  巍
+@@ -4169,6 +4172,7 @@
+ eob   郡
+ eobf  醞
+ eobh  群
++eobh  羣
+ eof   焄
+ eojo  崮
+ eok   崿
+@@ -5078,6 +5082,7 @@
+ fldh  燱
+ fleo  煻
+ flfb  巽
++fleb  焿
+ flen  焿
+ flfr  罽
+ flfw  選
+@@ -5108,6 +5113,7 @@
+ floz  焞
+ flp   改
+ flpu  焲
++flps  㷧
+ flq   罿
+ flr   炕
+ flr   匟
+@@ -9309,6 +9315,7 @@
+ kha   感
+ kha   忥
+ khav  忥
++khdw  瓈
+ khnp  璈
+ kho   馗
+ khp   珌
+@@ -9362,6 +9369,7 @@
+ kkkx  璱
+ kkmb  質
+ kko   瑊
++kkt   琹
+ kkw   珽
+ kkx   琖
+ kk,   
+@@ -9904,6 +9912,7 @@
+ lbju  癈
+ lbk   庰
+ lbk   麙
++lbk   癀
+ lbkv  麙
+ lbkb  麒
+ lbl   療
+@@ -9977,6 +9986,7 @@
+ lbqs  瘰
+ lbr   麂
+ lbrb  痶
++lbrb  癀
+ lbrc  瘋
+ lbrc  瘽
+ lbrcv 瘽
+@@ -11439,6 +11449,7 @@
+ mfa   驊
+ mfa   駺
+ mfa   騃
++mfa   𤆬
+ mfav  馳
+ mfas  驊
+ mfaf  駺
+@@ -14039,6 +14050,7 @@
+ oto   啊
+ otov  啊
+ otoh  喕
++otot  槑
+ otqx  哽
+ otrp  噉
+ otts  噤
+@@ -14072,6 +14084,7 @@
+ ove   唯
+ ovf   咋
+ ovff  嘸
++ovi   嗟
+ ovj   咈
+ ovn   噗
+ ovnf  鷕
+@@ -18197,6 +18210,7 @@
+ rxvv  蕥
+ rxw   藡
+ rxx   艾
++rxx   芪
+ rxx   風
+ rxxv  風
+ rxxn  莃
+@@ -19912,6 +19926,7 @@
+ toh   槶
+ tohv  麵
+ tohs  槶
++tohb  靧
+ tohc  蠠
+ tohr  靦
+ toj   樿
+@@ -20164,6 +20179,7 @@
+ ttb   郴
+ ttbd  棼
+ ttc   夢
++ttd   栢
+ ttde  楂
+ ttdp  櫌
+ tte   檯
+@@ -20797,6 +20813,7 @@
+ ufue  鱈
+ ufue  鰩
+ ufuev 鰩
++ufuf  鱻
+ ufuo  鮐
+ ufuu  鰩
+ ufv   鰒
+@@ -23901,6 +23918,7 @@
+ xkx   餞
+ xl    奄
+ xl    黽
++xlp   飰
+ xlv   黽
+ xld   響
+ xln   饟
+@@ -23923,6 +23941,7 @@
+ xnb   館
+ xnc   餫
+ xncb  饞
++xne   𠕆
+ xneo  餇
+ xnf   鴉
+ xnf   鵪
+@@ -24639,6 +24658,7 @@
+ yox   壧
+ yoxv  壧
+ yoyo  喆
++yoyo  嚞
+ yo,   
+ yo,   
+ yo,v  
+@@ -24972,6 +24992,7 @@
+ yzru  趣
+ yzs   赻
+ yzs   縶
++yzs   埗
+ yzsv  縶
+ yzsb  趎
+ yzsb  趲
+@@ -27180,7 +27201,6 @@
+ aqoc  镪
+ aqph  戚
+ aqphv 戚
+-aqr   划
+ aqrr  划
+ aqs   镙
+ aqt   锞
+@@ -27238,11 +27258,9 @@
+ ate   鉢
+ ati   钉
+ atl   术
+-atl   术
+ atl   铳
+ atlv  术
+ atlr  铳
+-atn   余
+ atn   术
+ atnr  余
+ ato   钶
+@@ -27262,7 +27280,6 @@
+ aua   钗
+ aua   锊
+ aue   钥
+-aue   钥
+ auer  钥
+ auo   台
+ auq   镭
+@@ -27414,7 +27431,6 @@
+ bfv   毙
+ bgn   陕
+ bgn   关
+-bgn   陕
+ bgn   関
+ bgnv  关
+ bgnr  陕
+@@ -27429,7 +27445,6 @@
+ bhh   豫
+ bhle  膻
+ bhlm  膻
+-bhn   余
+ bhna  养
+ bhnk  养
+ bhnr  养
+@@ -27454,17 +27469,13 @@
+ bjqs  冻
+ bjrs  际
+ bkbf  鲞
+-bkbi  羡
+ bkbr  养
+ bkf   盖
+ bki   义
+-bkj   并
+ bko   减
+-bkri  羡
+ bkwi  羡
+ bkx   养
+ bloh  凛
+-blos  凉
+ blos  凛
+ blp   厄
+ blr   坑
+@@ -27481,7 +27492,6 @@
+ bmv   贫
+ bnb   馆
+ bne   净
+-bne   净
+ bneh  隐
+ bneh  隠
+ bni   誊
+@@ -27524,7 +27534,6 @@
+ but   颂
+ butb  颂
+ buy   陉
+-bve   准
+ bwf   为
+ bwn   还
+ bwn   氽
+@@ -27533,12 +27542,10 @@
+ bx    义
+ bxe   坻
+ bxiw  随
+-bxiy  堕
+ bxn   随
+ bxp   爷
+ bxrb  爷
+ bxuw  随
+-bxuy  堕
+ bxy   升
+ by    坠
+ byby  陆
+@@ -27704,7 +27711,6 @@
+ cqo   届
+ cqv   蚝
+ cr    剥
+-crd   蜡
+ cren  蛳
+ crj   蛘
+ crl   辄
+@@ -27777,11 +27783,9 @@
+ dac   殓
+ dae   亘
+ dae   殓
+-daf   残
+ dah   态
+ daj   晔
+ daob  殓
+-daqq  残
+ dase  殓
+ daw   边
+ daw   辺
+@@ -27796,7 +27800,6 @@
+ dbqp  昆
+ dbv   殡
+ dcc   奢
+-dcf   昵
+ dda   斗
+ ddar  刘
+ ddd   力
+@@ -27819,7 +27822,6 @@
+ dfeb  顕
+ dfet  顕
+ dfoo  奁
+-dfro  昵
+ dfv   驾
+ dfx   奁
+ dg    贸
+@@ -27836,7 +27838,6 @@
+ din   颛
+ diqf  鹌
+ dkh   恳
+-dkx   残
+ dky   垦
+ dla   晒
+ dlho  皓
+@@ -27854,7 +27855,6 @@
+ dlw   昱
+ dma   瞒
+ dmb   负
+-dmd   勖
+ dmik  旺
+ dnc   晕
+ dnc   晖
+@@ -27873,7 +27873,6 @@
+ dooj  殚
+ dpd   夭
+ dpfj  晔
+-dq    残
+ dqer  晓
+ dqer  暁
+ dqlf  鹌
+@@ -27929,10 +27928,8 @@
+ eam   仑
+ ean   酿
+ ean   醸
+-eap   岭
+ eapb  岭
+ eapt  岭
+-eat   岭
+ eatb  岭
+ eatt  岭
+ eaxf  鹉
+@@ -27957,7 +27954,6 @@
+ ed    习
+ edad  呆
+ edb   昆
+-edc   蚕
+ ede   岂
+ ede   昼
+ ede   亘
+@@ -28099,7 +28095,6 @@
+ eri   専
+ eri   颛
+ eris  颛
+-erl   兀
+ ernd  崂
+ ernt  嵘
+ err   制
+@@ -28123,7 +28118,6 @@
+ etfg  釈
+ etfy  釈
+ etmb  顿
+-etn   采
+ etnb  颛
+ etni  颛
+ etnl  乱
+@@ -28226,7 +28220,6 @@
+ feff  烬
+ fegu  暖
+ fei   灿
+-fel   炖
+ feow  还
+ fep   炀
+ ferl  业
+@@ -28304,7 +28297,6 @@
+ flfw  选
+ flhp  炖
+ flop  炖
+-flr   炕
+ flzp  炖
+ fmb   买
+ fmc   磷
+@@ -28336,7 +28328,6 @@
+ fob   炽
+ fod   烟
+ foo   启
+-foo   后
+ foo   啓
+ foof  鸥
+ fooi  欧
+@@ -28393,7 +28384,6 @@
+ ft    栄
+ fta   烦
+ fta   顷
+-fti   灯
+ ftmb  烦
+ ftmb  顷
+ ftv   顷
+@@ -28497,7 +28487,6 @@
+ ggi   娇
+ ggj   开
+ ggl   妩
+-ggl   姹
+ ggno  娇
+ ggnr  娇
+ ggo   娇
+@@ -28507,7 +28496,6 @@
+ gi    乔
+ giru  毁
+ giv   乔
+-gj    干
+ gjr   干
+ gjjb  邮
+ gk    装
+@@ -28522,7 +28510,6 @@
+ gmt   娴
+ gmx   慢
+ gn    夹
+-gnc   蚕
+ gncb  嫔
+ gnf   鹫
+ gni   婶
+@@ -28558,7 +28545,6 @@
+ gooj  婵
+ gop   敌
+ gov   乔
+-gow   适
+ gpdo  娇
+ gpe   侄
+ gpqn  麸
+@@ -28566,7 +28552,6 @@
+ gpto  面
+ gpty  面
+ gpx   麦
+-gqb   妹
+ gqbb  袅
+ gqd   动
+ gqdf  勋
+@@ -28610,19 +28595,14 @@
+ gylk  装
+ gyr   娆
+ gyru  毁
+-gys   妹
+ gywf  妫
+ gyyr  娆
+ h     时
+ hado  怆
+ hak   忧
+-hap   怜
+-hat   怜
+ hat   秣
+ hats  秣
+ hb    积
+-hba   怀
+-hba   懐
+ hbbe  忏
+ hbor  税
+ hbor  悦
+@@ -28631,13 +28611,10 @@
+ hbqp  荑
+ hbv   懒
+ hceb  愦
+-hci   种
+-hcj   种
+ hck   惭
+ hcn   怿
+ hcnr  怿
+ hct   栗
+-hdae  恒
+ hdem  惕
+ hdf   愠
+ hdg   秆
+@@ -28649,7 +28626,6 @@
+ he    恒
+ hec   秽
+ hed   恺
+-hede  恒
+ heed  慑
+ heeh  稳
+ heeh  穏
+@@ -28661,7 +28637,6 @@
+ hek   怅
+ hek   怃
+ heny  称
+-hep   惕
+ hev   恒
+ hf    悦
+ hfd   旨
+@@ -28674,7 +28649,6 @@
+ hfyg  怿
+ hg    面
+ hgi   骄
+-hgj   忏
+ hgl   怃
+ hgno  骄
+ hgo   骄
+@@ -28703,8 +28677,6 @@
+ hlfk  怀
+ hlfk  懐
+ hloh  懔
+-hlos  惊
+-hls   惊
+ hlwq  畜
+ hlxu  恼
+ hlxu  悩
+@@ -29013,7 +28985,6 @@
+ iqn   谦
+ iqt   课
+ iqu   谓
+-iqu   胄
+ ir    说
+ ir    説
+ ira   讯
+@@ -29186,8 +29157,6 @@
+ jbyo  舎
+ jc    载
+ jcer  事
+-jcjo  据
+-jcjo  拠
+ jcn   择
+ jcn   択
+ jcs   拣
+@@ -29203,7 +29172,6 @@
+ jddd  协
+ jddd  拉
+ jde   担
+-jde   登
+ jder  登
+ jdee  拓
+ jdem  扬
+@@ -29270,7 +29238,6 @@
+ jgir  挢
+ jgj   擀
+ jgl   抚
+-jgl   托
+ jgn   挟
+ jgno  挢
+ jgo   钳
+@@ -29382,7 +29349,6 @@
+ jorr  克
+ jouf  鹕
+ joxb  掼
+-jpa   扑
+ jpa   总
+ jpas  总
+ jpa   総
+@@ -29483,7 +29449,6 @@
+ jyu   劫
+ jyw   挞
+ jyx   扰
+-jyy   挂
+ jyyp  挂
+ jyyr  挠
+ jz    拟
+@@ -29534,7 +29499,6 @@
+ kkmb  质
+ kln   镶
+ klok  镶
+-klos  琼
+ kls   琼
+ klul  珑
+ km    气
+@@ -29604,7 +29568,6 @@
+ kzf   疵
+ kznm  璇
+ la    丽
+-la    离
+ lav   离
+ lad   厌
+ ladv  魇
+@@ -29829,7 +29792,6 @@
+ lomf  码
+ lomr  砚
+ lon   炮
+-lon   确
+ lonl  炮
+ lonv  确
+ loob  颤
+@@ -29865,7 +29827,6 @@
+ lox   砖
+ loyr  硗
+ lozf  鹑
+-lp    厂
+ lp    广
+ lp    広
+ lpdb  愿
+@@ -30372,7 +30333,6 @@
+ muq   釈
+ muum  糁
+ muv   贩
+-mve   睢
+ mvv   佛
+ mvv   仏
+ mw    边
+@@ -30421,7 +30381,6 @@
+ nbmg  窭
+ nbmu  窃
+ nbn   内
+-nbn   帘
+ nbob  窝
+ nbp   内
+ nbpb  宾
+@@ -30439,7 +30398,6 @@
+ nbym  窦
+ nbz   挖
+ nc    触
+-nca   触
+ ncb   郓
+ ncj   军
+ ncmb  宾
+@@ -30557,7 +30515,6 @@
+ nrdd  幕
+ nrdn  幂
+ nre   匀
+-nre   宦
+ nree  窟
+ nreu  窃
+ nreu  窟
+@@ -30571,7 +30528,6 @@
+ nrmr  宽
+ nrmr  寛
+ nrmu  窃
+-nrn   帘
+ nrob  窝
+ nrpp  窍
+ nrq   窥
+@@ -30592,7 +30548,6 @@
+ nsr   宪
+ nsw   迩
+ nt    额
+-nti   宁
+ ntn   枭
+ nu    窃
+ nvd   觞
+@@ -30613,7 +30568,6 @@
+ nxl   亀
+ nxr   刚
+ nxx   冈
+-nxx   网
+ nyof  雕
+ nyom  雕
+ nyow  周
+@@ -30669,7 +30623,6 @@
+ oefe  哑
+ oeh   啸
+ oek   呒
+-oel   吨
+ oenp  嗳
+ oeqh  混
+ oet   吨
+@@ -30718,9 +30671,7 @@
+ okeb  吴
+ okd   呉
+ okeb  呉
+-oki   听
+ oki   斫
+-oki   聴
+ okk   号
+ okzr  号
+ ol    号
+@@ -30759,7 +30710,6 @@
+ onor  吼
+ onr   别
+ ont   咛
+-oo    口
+ ooe   哑
+ ooh   恶
+ ooh   悪
+@@ -30771,11 +30721,9 @@
+ oomb  圆
+ oomf  骂
+ oooe  岩
+-oooe  岩
+ oook  斫
+ oooo  岩
+ ooor  剿
+-ooot  噪
+ ooqb  郸
+ ooqd  兽
+ ooqd  獣
+@@ -30837,7 +30785,6 @@
+ ota   颚
+ otmb  颚
+ oufd  噜
+-ouj   吁
+ ounf  鹃
+ ouo   咳
+ oup   团
+@@ -30860,7 +30807,6 @@
+ oxa   嘱
+ oxa   団
+ oxmb  贯
+-oxx   毋
+ oxxr  毋
+ oy    吓
+ oybw  哒
+@@ -30930,7 +30876,6 @@
+ pae   俭
+ pae   倹
+ pai   窬
+-pak   优
+ pam   伦
+ paob  俭
+ paob  倹
+@@ -30954,8 +30899,6 @@
+ pbn   帅
+ pbor  脱
+ pbp   伧
+-pbr   价
+-pbr   価
+ pbt   侩
+ pbtn  师
+ pbv   傧
+@@ -30979,7 +30922,6 @@
+ pcua  传
+ pcyo  局
+ pczz  具
+-pdc   蚕
+ pdcr  俯
+ pded  皑
+ pdfu  慢
+@@ -31128,7 +31070,6 @@
+ pox   俨
+ ppa   处
+ ppa   偬
+-ppa   仆
+ ppav  处
+ ppar  偬
+ ppas  仆
+@@ -31160,13 +31101,11 @@
+ prub  魉
+ prz   处
+ ps    系
+-psa   系
+ psnb  偿
+ psnf  傥
+ psnt  偿
+ pta   颇
+ ptdp  优
+-pte   体
+ ptf   休
+ ptmb  颇
+ ptmp  优
+@@ -31174,7 +31113,6 @@
+ ptnb  俩
+ ptnf  鸺
+ pttk  侬
+-pua   么
+ puv   仅
+ puv   傩
+ pux   仅
+@@ -31219,7 +31157,6 @@
+ qaqc  辇
+ qaqd  狯
+ qbe   犹
+-qbl   毗
+ qbpm  牦
+ qbpq  厘
+ qbqj  弹
+@@ -31292,7 +31229,6 @@
+ qrd   猟
+ qren  狮
+ qrj   毕
+-qrq   猫
+ qrv   脏
+ qrv   臓
+ qrvu  获
+@@ -31334,7 +31270,6 @@
+ qvsb  獭
+ qwn   遗
+ qyen  狮
+-qypd  猪
+ qyv   垒
+ qyya  畴
+ qzes  狲
+@@ -31373,7 +31308,6 @@
+ rbws  萨
+ rc    辈
+ rca   风
+-rca   茧
+ rcad  飙
+ rccw  千
+ rcdh  勤
+@@ -31508,7 +31442,6 @@
+ rmcs  兰
+ rmg   蒌
+ rmgp  薮
+-rmiz  蓰
+ rmiz  苁
+ rmjs  兰
+ rml   毛
+@@ -31543,7 +31476,6 @@
+ rnm   萱
+ rnmr  萱
+ rnnf  莺
+-rno   苟
+ rnof  惊
+ rnoo  营
+ rnoo  営
+@@ -31597,7 +31529,6 @@
+ rph   荽
+ rphu  茜
+ rpi   节
+-rpj   苹
+ rpl   莅
+ rpoh  聪
+ rpoh  葱
+@@ -31711,7 +31642,6 @@
+ rvaf  监
+ rvar  览
+ rvar  覧
+-rve   萑
+ rvea  鉴
+ rvec  临
+ rvef  监
+@@ -32277,14 +32207,12 @@
+ teq   榉
+ tex   楦
+ tf    码
+-tfa   杰
+ tfb   朴
+ tfc   栀
+ tfc   椤
+ tfcb  柜
+ tfcl  栀
+ tfed  朴
+-tff   柜
+ tfng  桩
+ tfoo  枢
+ tfq   柜
+@@ -32294,12 +32222,9 @@
+ tga   觚
+ tgi   桥
+ tgi   栉
+-tgj   杆
+-tgj   枠
+ tgno  桥
+ tgnr  桥
+ tgo   桥
+-tie   杠
+ tih   槠
+ timb  杠
+ tiyd  槠
+@@ -32365,7 +32290,6 @@
+ tnrm  耐
+ tnsb  槟
+ tnt   柠
+-tnu   构
+ tny   楠
+ tnz   碇
+ toa   检
+@@ -32373,13 +32297,11 @@
+ tod   拐
+ toe   桠
+ tofu  枷
+-toh   面
+ toot  锹
+ tox   枷
+ tpdo  桥
+ tpdt  栎
+ tpfj  桦
+-tpu   极
+ tqer  桡
+ tqh   思
+ tqu   画
+@@ -32393,8 +32315,6 @@
+ trfr  榄
+ trj   弃
+ trjq  桦
+-trl   机
+-trn   极
+ trn   栎
+ trok  柽
+ trov  权
+@@ -32630,12 +32550,10 @@
+ uitb  颈
+ uits  巯
+ uiw   迳
+-uj    于
+ uk    粤
+ uld   雳
+ ulhz  雳
+ ulk   脉
+-ulr   肮
+ ulul  胧
+ ulx   胶
+ ulxu  脑
+@@ -32654,7 +32572,6 @@
+ unf   鶏
+ unk   脓
+ unli  胆
+-uno   朐
+ unsb  膑
+ uoa   脸
+ uob   肢
+@@ -32680,13 +32597,11 @@
+ urar  臓
+ urbb  祧
+ urbu  瘠
+-urd   腊
+ uri   腼
+ urir  腼
+ urok  脓
+ urv   脏
+ urv   臓
+-use   胜
+ usfs  腊
+ usi   胫
+ usl   腊
+@@ -32723,7 +32638,6 @@
+ uuut  颡
+ uuuy  垒
+ uuw   遥
+-uux   双
+ uuy   胫
+ uve   难
+ uvo   胆
+@@ -32745,7 +32659,6 @@
+ uwzo  沾
+ uy    垦
+ uyd   劲
+-uye   圣
+ uyr   刭
+ uyt   颈
+ uytb  颈
+@@ -32776,7 +32689,6 @@
+ vdg   矫
+ vdgo  矫
+ vdgr  矫
+-vdp   复
+ vdpo  矫
+ vdx   劝
+ vdy   劝
+@@ -32857,10 +32769,8 @@
+ vvx   复
+ vwn   进
+ vwn   迈
+-vx    复
+ vxr   复
+ vxx   只
+-vy    万
+ vys   袜
+ vz    碍
+ wa    为
+@@ -32876,7 +32786,6 @@
+ wado  向
+ wado  沧
+ wadx  飨
+-waf   浅
+ wakp  泷
+ wal   泷
+ wakp  滝
+@@ -32888,7 +32797,6 @@
+ waqd  浍
+ waqf  灭
+ waqo  减
+-waqq  浅
+ watp  溆
+ waty  涂
+ waxu  泼
+@@ -32914,7 +32822,6 @@
+ wck   渐
+ wcn   泽
+ wcn   沢
+-wco   洒
+ wcru  淀
+ wcw   涟
+ wd    响
+@@ -32932,7 +32839,6 @@
+ wdfe  湿
+ wdlb  灏
+ wdlt  灏
+-wdo   汨
+ wdos  汨
+ wdrk  污
+ wdrk  汚
+@@ -33036,7 +32942,6 @@
+ wkm   汽
+ wkn   丧
+ wko   减
+-wkx   浅
+ wla   洒
+ wlar  洒
+ wlbk  滚
+@@ -33088,7 +32993,6 @@
+ wncb  滨
+ wncb  浜
+ wne   净
+-wnez  淀
+ wnf   鹉
+ wnf   鹆
+ wnfs  鹆
+@@ -33109,7 +33013,6 @@
+ wnry  洼
+ wnsb  滨
+ wnsb  浜
+-wnt   泞
+ wnu   没
+ wnu   沟
+ wnxu  汹
+@@ -33154,7 +33057,6 @@
+ wqos  镐
+ wqr   弥
+ wqr   洱
+-wqv   浅
+ wqx   泄
+ wr    测
+ wra   泛
+@@ -33259,7 +33161,6 @@
+ wybp  凌
+ wyfb  渎
+ wym   渎
+-wyo   洁
+ wyr   浇
+ wyrp  凌
+ wyv   涂
+@@ -33390,11 +33291,8 @@
+ yal   垄
+ yaqo  碱
+ yav   寿
+-yba   坏
+-yba   壊
+ ybd   买
+ ybea  蹲
+-ybea  蹲
+ ybgb  贽
+ ybgc  蛰
+ ybgf  鸷
+@@ -33460,7 +33358,6 @@
+ yk    坏
+ yk    壊
+ yka   执
+-yka   执
+ ykad  势
+ yke   丘
+ yko   碱
+@@ -33498,7 +33395,6 @@
+ yni   师
+ ynj   帅
+ yno   壶
+-yno   壶
+ ynr   卖
+ ynr   壳
+ ynr   殻
+@@ -33584,7 +33480,6 @@
+ yzd   势
+ yzdg  赶
+ yzf   热
+-yzg   赶
+ yzh   挚
+ yzmb  贽
+ yzne  趋
+@@ -33597,7 +33492,6 @@
+ yzt   臬
+ yzx   执
+ yzx   赵
+-yzx   执
+ yzy   垫
+ zac   签
+ zado  舱
+@@ -33822,7 +33716,6 @@
+ ,iv   │
+ ,lr   ≤
+ ,lr   ≥
+-,p    ／
+ ,ps   ／
+ ,pp   ″
+ ,ppv  ″
+@@ -33848,7 +33741,6 @@
+ ii    ⼁
+ aa    ⼂
+ pp    ⼃
+-zl    乙
+ ii    ⼅
+ re    ⼆
+ le    ⼇
+@@ -34016,6 +33908,7 @@
+ gwf   𡠄	# u21804
+ plyy  𠊎	# u2028E
+ ke    𡈼	# u2123C
++kng   𤥃	# u24943
+ bpsu   \ruby{你}{ㄋㄧˇ}
+ email edt1023@info.sayya.org
+ email edt1023@cle.linux.org.tw
+@@ -34037,6 +33930,8 @@
+ eff   峠
+ qst   巣
+ mijh  徳
++mh    徳
++mij   徳
+ kp    徴
+ miep  徴
+ mikp  徴
+@@ -34046,10 +33941,8 @@
+ wzzz  澁
+ fqo   畑
+ ydp   皷
+-bkpm  着
+ rogn  茣
+ qnqb  賛
+-bpw   込
+ bwn   込
+ ewn   辷
+ jwn   辻
+@@ -34092,8 +33985,6 @@
+ rze   凪
+ omlk  袰
+ jaop  掵
+-jbi   揃
+-jber  揃
+ jsd   挘
+ jff   挊
+ qlk   畩
+@@ -34146,7 +34037,6 @@
+ txj   枡
+ ttf   梺
+ tpr   椡
+-tvdo  椥
+ tlpa  椨
+ tnp   榁
+ trsi  榊
+@@ -34156,7 +34046,6 @@
+ trob  椣
+ tpdw  楾
+ tcf   樮
+-tld   枥
+ tom   栂
+ tdd   椙
+ tyoo  橲
+@@ -34185,7 +34074,6 @@
+ zwdt  簗
+ cnol  蚫
+ cnl   蚫
+-cypf  蛯
+ apob  鋲
+ akv   鋲
+ akeb  鋲
+@@ -34197,6 +34085,9 @@
+ lobo  硲
+ lwo   硲
+ lorf  硴
++lobk  礢
++lobr  礢
++lobx  礢
+ uflo  鮖
+ ufyf  鮱
+ ufpt  鮴
+@@ -34224,7 +34115,6 @@
+ zue   艝
+ qee   弖
+ wjj   瓧
+-wgj   瓩
+ wbd   瓰
+ wml   瓱
+ wel   瓲
+@@ -34240,9 +34130,2609 @@
+ pdq   畠
+ uue   膤
+ nfl   匂
+-ya    乄
+-yx    乄
++xx    乄
++yxa   乄
++yaa   乄
+ yeff  壗
+ ycnb  壗
+ tne   槝
++oal   吔	# carl_tw
++okx   飸	# carl_tw
++iryt  讛	# carl_tw
++irjt  讛	# carl_tw
++irz   讛	# carl_tw
++# 廣東方言
++rsys  祙
++oex   吚
++ota   呍
++outa  呍
++oxi   咗
++opda  啲
++ops   喺
++opes  喺
++opps  喺
++opoo  嗰
++opo   嗰
++obi   嗰
++ovi   嗰
++oaoh  嗱
++ogoh  嗱
++oguh  嗱
++odl   嘅
++oduk  嘅
++opdk  嘅
++oqu   嘢
++otty  嘢
++olw   嚒
++olpu  嚒
++oltu  嚒
++oltw  嚒
++aom   乸
++zmb   孭
++uhr   脷
++oypd  啫
++oho   啫
++oelo  啱
++oelp  啱
++oeox  啱
++oeop  啱
++oooo  啱
++oooe  啱
++mbew  糍
++jbqp  挮
++jtp   挮
++jtde  揸
++jtme  揸
++jfwv  擓
++jwfl  擓
++jwfv  擓
++jfsv  攞
++jfca  攞
++xwbn  餸
++xgw   餸
++xbew  餸
++xbgw  餸
++odot  㗎
++olok  㗒
++olkn  㗒
++olk   㗒
++obps  𠾐
++obs   𠾐
++oydm  嘭
++omv   嘭
++oyom  嘭
++omq   噃
++orcd  嘞
++ohdw  嚟
++iol   甴
++iqo   甴
++iqos  甴
++loo   甴
++ole   甴
++oti   曱
++# from ptt 補破網 v 1.3
++aae   鍂
++aaia  镈
++aaja  镈
++aal   龖
++aaoh  鎿
++aba   镮
++aber  鎆
++abew  镃
++abho  鐥
++abi   鎆
++abko  鐥
++abs   鉩
++abs   钄
++aca   鉵
++acj   鈡
++acl   錷
++acm   鎇
++acol  鐴
++acx   鉂
++add   锠
++adea  鍀
++adf   鎾
++adkc  郒
++adkd  勆
++adkl  郒
++adns  鏲
++adre  翶
++adto  锜
++adud  勆
++adx   勆
++adxx  鏯
++ae    釒
++aeem  镠
++aees  镠
++aefe  铔
++aefp  錽
++aem   镠
++aen   銟
++aepf  鎽
++aeuu  鏰
++aeuu  镚
++aez   佱
++afad  錑
++afek  镮
++afl   釯
++afr   刬
++agj   釺
++ago   铦
++ahad  鑙
++ahr   鋵
++ajci  鏉
++ajnf  喸
++ajnh  懯
++ajnz  乶
++ajor  鋴
++ajxb  鏯
++akb   锧
++akbk  鐁
++aki   鍁
++akj   鐦
++akj   钘
++aknb  锧
++akr   铏
++akw   迬
++albi  鐝
++aldj  鏱
++alk   鎄
++alok  鎄
++alp   鈪
++als   鏲
++alws  鏲
++amd   鐤
++amk   鐦
++amrf  鷱
++amwf  鷱
++anbo  镕
++anbs  鑹
++anj   鑔
++anjs  鑔
++anl   铇
++anmh  鍃
++anol  铇
++anor  镵
++anqh  鍯
++anra  鑧
++anrr  鑧
++anrs  鑹
++ans   鉨
++anwo  镕
++anxp  鎫
++aobf  鎾
++aoc   郒
++aocl  郒
++aon   镮
++aon   銱
++apdk  锽
++ape   铚
++apj   鐴
++apk   斴
++apnp  鎫
++apr   刢
++apu   钑
++aqar  虦
++aqbr  鎅
++aqdg  朇
++aqi   鈟
++aqok  戜
++aqqq  鑘
++aqr   鎅
++arb   鎁
++arc   锳
++ard   鐯
++arf   铓
++arh   鐯
++arj   龏
++arm   钄
++arms  钄
++arn   钑
++arr   鈨
++arsm  鎺
++arur  鑦
++arww  镃
++arx   銰
++aryd  鐯
++asa   銯
++asfs  镴
++asj   鈝
++asl   镴
++asnh  鐣
++asnr  镋
++asos  镴
++asrs  镴
++ath   怸
++atk   斴
++atne  鸰
++atnf  鸰
++atoo  鎶
++atr   刢
++ats   鋶
++att   鎶
++aufd  鑥
++ava   鉇
++avd   鉃
++avj   鉘
++avo   锜
++avsi  鏉
++awo   铻
++awx   鈫
++axb   鋣
++axfi  詟
++axo   銽
++ayym  钖
++aza   釻
++azh   鎼
++azr   錿
++azx   釻
++ba    丷
++baa   亽
++bba   仒
++bbbe  鹡
++bbbf  鹡
++bcg   嫑
++bcol  隦
++bdof  兺
++bebe  鹢
++bebf  鹢
++bej   冿
++bej   屰
++bejt  兿
++bewf  鷀
++bfo   噕
++bfz   阸
++bha   羪
++bhak  羪
++bhbi  歚
++bhbp  敾
++bhd   劷
++bhdp  厁
++bhni  羫
++bhri  歚
++bhrp  敾
++bhue  鲝
++bhuf  鮺
++bhuf  鲝
++bicc  螀
++bie   冮
++biuc  螀
++biz   乲
++bjj   仐
++bkbi  歚
++bkbp  敾
++bkri  歚
++bkrp  敾
++bmrh  慿
++bndl  凕
++bnlp  陒
++bnr   奍
++bnsd  勬
++bnx   餋
++box   冺
++bp    丷
++bpi   兯
++bpj   隦
++bpne  鸧
++bpnf  鸧
++brk   尩
++brl   尣
++brna  尦
++brne  尦
++bsny  隚
++bsu   陗
++btmo  噵
++btn   枈
++bued  勜
++buee  鹟
++buef  鹟
++bwfo  噕
++bwfw  爳
++bwn   阥
++byfb  凟
++bym   凟
++cbdo  螥
++cbef  螠
++cbew  螆
++cbi   邜
++cbl   蠄
++cblu  蠄
++cbwu  蠄
++ccc   蛥
++ccf   蚭
++ccyo  夡
++cda   軚
++cddd  蛠
++cdf   辒
++cdj   斘
++cdn   轪
++cei   軕
++ceo   輏
++ceqf  盠
++cfk   軭
++cfnq  蜯
++chr   蜏
++chs   螦
++cipw  邎
++cjcr  蝲
++ckj   蚈
++clda  蟵
++clof  巼
++clos  辌
++cls   辌
++cma   屗
++cmb   屃
++cmn   蟎
++cnb   輨
++cnb   屃
++cnbf  蝄
++cnbl  蝄
++cne   鸤
++cnez  蝊
++cnf   鸤
++cng   輡
++cnq   蜔
++cnxx  蛧
++co    覀
++cof   巼
++colf  鸊
++cpa   虲
++cpad  覄
++cpit  螩
++cpn   螩
++cpo   蛒
++cpob  螕
++cpof  夞
++crbb  臋
++crei  蟏
++crfd  蠴
++crfh  蠴
++crnb  蟎
++crsu  叞
++crww  螆
++cse   夝
++cseq  輺
++ctu   蜟
++cua   屚
++cvff  蟱
++cvsr  蝲
++cye   螠
++cypd  螧
++cyud  蜐
++cza   軐
++cza   辀
++czj   軐
++czx   軐
++dadz  歰
++dae   丒
++daxf  昽
++dazz  歰
++dba   冭
++dbhi  暛
++dbki  暛
++dbne  鹍
++dbnf  鹍
++dbu   昖
++dceb  殨
++dcl   夿
++dddu  脋
++ddg   晘
++ddqe  鹠
++ddqf  鹠
++deee  曓
++demd  朂
++denm  旸
++deol  鼌
++dfca  曪
++dff   奆
++dfnh  殝
++dfo   奆
++dfsv  曪
++dfy   殬
++dfyg  殬
++dhee  暅
++diqr  剦
++dka   曂
++dki   歽
++dkm   暣
++dkx   暣
++dlds  曢
++dnbe  鹖
++dnbf  鹖
++dne   鹖
++dnf   鹖
++dnl   曢
++dnle  鹖
++dnlf  鹖
++dnm   旸
++dnmf  鶍
++doi   欩
++doo   夻
++doz   乫
++dpmj  曍
++dpmt  暞
++dpz   乮
++dqa   殨
++dqlr  剦
++drd   劽
++drd   朂
++dre   夳
++dreb  曂
++drib  曂
++drqb  曂
++drtb  曂
++dsa   夵
++dse   殅
++dse   甠
++duf   焽
++dur   昪
++duu   奟
++dvi   暛
++dxe   奃
++dxk   鬭
++dyym  旸
++dzas  奯
++dzcm  殩
++dzl   乧
++dzs   奯
++dzz   乧
++ea    爫
++eai   嵚
++eaob  醶
++earu  彟
++ease  崄
++eaxu  酦
++eba   乊
++ebef  嵰
++ebep  巙
++ebp   乊
++ebue  嵡
++ebz   乥
++ecee  翙
++ecee  崫
++ecnb  栆
++ecra  嶎
++eda   岃
++ednc  蠺
++edr   峢
++edya  嵵
++eed   旹
++eeee  亖
++eens  翚
++eepp  巎
++ee,   ─
++efi   丣
++efo   丣
++efp   岇
++egj   屽
++ehne  鹔
++ehnf  鹔
++ehr   峲
++eio   訔
++ejnd  巚
++ekk   亐
++elbi  嶥
++eld   峕
++elho  嵪
++elno  嵪
++eloo  嵪
++elp   屵
++elv   嵟
++elx   峧
++emip  嶶
++emsr  彞
++enad  巚
++ene   崅
++enf   鴺
++enf   鶍
++eni   帇
++enj   帇
++eny   爯
++eoa   醶
++eomr  覠
++eone  鹝
++eonf  鹝
++eoqq  疈
++eor   岲
++epb   峂
++epmp  巙
++eqdg  貋
++eqdk  貇
++eqer  峣
++eqjb  豮
++eqk   嵔
++eqn   嵰
++eqn   酜
++eqo   峀
++eqr   峣
++equ   畵
++erp   屷
++err   酛
++ese   亖
++eso   峼
++etde  嵖
++etpp  夓
++eua   镸
++eum   醦
++eunn  镹
++eur   镾
++eur   嶿
++eutr  嶿
++euum  醦
++euus  醦
++euw   瓺
++ewfo  噕
++ewfw  爳
++ewux  飖
++exe   酭
++exu   酭
++eyuf  醘
++ezed  巚
++ezpo  嗠
++fai   匬
++faqe  肈
++faur  匬
++fax   炦
++faxu  炦
++faxx  炦
++fayh  焾
++fba   罖
++fbbf  旕
++fbbz  乻
++fbed  烪
++fbgn  烪
++fbnr  仧
++fbnr  觍
++fbqp  罤
++fbue  鹡
++fbuf  鹡
++fce   煀
++fcee  煀
++fdd   焻
++fdez  煶
++fdls  燝
++fdnf  鴲
++fdt   豒
++febb  菐
++febd  菐
++febg  丵
++fedb  熴
++feg   熖
++fej   肁
++fek   匩
++feoe  鹮
++feof  鹮
++few   旔
++ffc   軰
++ffep  豒
++fffk  燶
++ffnf  鶑
++ffnh  憥
++fft   颎
++fftb  颎
++ffy   巪
++ffz   乬
++fgy   匨
++fhn   秌
++fibb  眔
++fifp  夑
++fifp  豒
++fj    丯
++fje   煹
++fjn   煶
++fjng  煵
++fjny  煹
++fkbk  燍
++fkp   敐
++fkz   乺
++fl    乀
++fl    乁
++flad  旘
++flnr  煷
++flor  煷
++flos  燷
++flp   炞
++flxu  匘
++fmlb  顚
++fmlt  顚
++fnbf  焹
++fncd  斣
++fncr  劅
++fnds  爎
++fnf   鴋
++fni   帍
++fnj   帍
++fnl   爎
++fnmd  匫
++fnn   匛
++fnx   焹
++fo    吂
++fo    罒
++fob   旘
++fobf  旕
++fod   劶
++foo   吂
++fopo  焒
++fot   焑
++fpd   晵
++fpf   炛
++fpno  扄
++frd   爉
++fre   烥
++frok  燶
++frsb  颕
++frst  颕
++fsa   尗
++fsfs  爉
++fsl   爉
++fso   匘
++fso   焅
++fsos  爉
++fspo  匘
++fspx  匘
++fsrq  爉
++fswu  匘
++fsx   匘
++fsxu  匘
++fszj  羄
++ftp   罤
++fts   旈
++fus   旀
++fuu   焩
++fvde  鹥
++fvdf  鹥
++fvdu  殹
++fvkb  膐
++fwa   眔
++fwf   熓
++fwn   眔
++fwu   匘
++fza   炿
++fzcx  爘
++fzl   乤
++fzn   爘
++fzz   乤
++gbbo  谸
++gbor  娧
++gci   妕
++gcl   妑
++gcl   麳
++gcs   麨
++gdg   娨
++gez   娐
++ggzu  敮
++gi    丩
++gjrt  牃
++gleq  牅
++gltt  嫲
++gngc  蠺
++gnou  敽
++gog   舏
++gpl   麳
++gpnb  嫓
++gps   麨
++gpua  娰
++gpub  娰
++gpx   攼
++gpzw  娫
++gqn   妋
++gri   刾
++grpf  婲
++gsqq  鼺
++gst   牃
++gunf  鴑
++gwn   迀
++gwo   谸
++gya   銺
++gzu   敽
++hafe  稶
++hajq  悑
++hao   秴
++haqe  稶
++haxe  稶
++hbef  稴
++hbew  稵
++hbn   秂
++hbur  恱
++hby   悂
++hcl   麳
++hcs   麨
++hdau  馛
++hdax  馛
++hdbw  邌
++hdez  馟
++hdrk  恗
++hdru  穝
++hdx   劧
++hea   穥
++henp  懓
++hfb   穙
++hfd   稥
++hfdd  稧
++hfe   醔
++hfeb  穙
++hfed  穙
++hfl   忋
++hfne  鹙
++hfnf  鹙
++hgn   悏
++hhdd  稧
++hhm   稶
++hhx   懓
++hij   悑
++hjj   稡
++hki   斱
++hlo   稖
++hlos  稤
++hls   稤
++hltu  懡
++hltw  懡
++hnbo  愹
++hnf   穒
++hng   惂
++hnk   秾
++hnpe  嶅
++hnqd  穞
++hnwo  愹
++hob   怾
++hoed  悮
++hogn  悮
++hpa   穙
++hpl   麳
++hpn   穙
++hps   麨
++hqb   愵
++hqbb  愵
++hqmm  愵
++hqn   稴
++hrc   愥
++hrww  稵
++hss   秼
++huk   靔
++hus   恈
++husr  靗
++hvt   穕
++hwo   噵
++hww   邌
++hxk   恗
++hxx   怟
++hyff  懗
++hypd  愭
++hzl   乯
++hzl   乽
++hzz   乯
++hzz   乽
++iba   譞
++ibo   譄
++ibqd  譄
++icew  讉
++icn   詇
++ida   讱
++idqn  巭
++ids   謃
++ieu   詜
++ifa   诪
++ifek  譞
++iffp  夑
++iffp  豒
++ifph  懯
++igl   讬
++iha   悥
++ihr   誗
++iii   譶
++ikj   訮
++imbh  慐
++ina   畃
++ine   畃
++ini   谉
++inii  谉
++ino   诇
++io    訁
++iof   喸
++ion   譞
++ipu   訯
++ipx   诐
++iqia  畃
++iqie  畃
++iqw   讉
++ira   訉
++irar  聓
++irn   訯
++irpf  誮
++irqn  巬
++irt   頥
++irtb  頥
++iru   訯
++issj  卛
++iur   譳
++iutr  譳
++ixu   讻
++ixx   訤
++iyu   詓
++iyzu  谞
++izl   乶
++izz   乶
++jag   揻
++jaj   撶
++jaqg  揻
++jbn   扖
++jboh  搃
++jbp   扖
++jbt   顚
++jcbb  栆
++jcm   捤
++jcsw  遬
++jcu   叓
++jdmr  覴
++jdnm  掦
++jdr   挒
++jduf  擝
++jea   挦
++jeb   掚
++jefe  挜
++jenb  掚
++jep   掦
++jffo  攚
++jfmb  攧
++jhee  搄
++ji    丩
++jjlb  攧
++jjmb  攧
++jjmt  攧
++jjnd  擜
++jkeb  捠
++jkv   捠
++jkw   娎
++jkz   乴
++jleb  掶
++jlen  掶
++jlh   擵
++jlow  揼
++jlth  擵
++jlua  鋬
++jmeb  顚
++jmef  嗭
++jmlb  顚
++jmlf  嗭
++jmlt  顚
++jnad  擜
++jnb   抐
++jnb   抣
++jnbc  摉
++jnbd  揬
++jnd   揬
++jnmh  揔
++jnnt  鬶
++jnqh  揔
++jnr   抣
++jnrd  揬
++jnsp  敇
++jnzh  愂
++joc   桚
++jof   嗭
++joh   怘
++jpfj  撶
++jpob  捠
++jqbf  鴺
++jqj   癷
++jqqq  攂
++jqu   叀
++jrjq  撶
++jroh  搃
++jrrq  撶
++jrt   挆
++jrt   枽
++jsm   毮
++jsny  摚
++jsy   摚
++jtnb  掚
++jud   攰
++jvf   拃
++jybp  掕
++jyrp  掕
++jyx   掕
++jzf   掹
++jzg   擌
++jzm   摣
++kae   琻
++kaj   璍
++kbef  尲
++kbkr  琷
++kbn   玐
++kbp   玱
++kbr   剘
++kceb  尵
++kcef  璏
++kcuh  璤
++kdbs  璙
++kdx   劤
++kea   玙
++keb   氞
++kekl  璑
++kenb  氞
++kep   玚
++kgll  璑
++kjh   璤
++kjj   卙
++kjqh  璤
++kjw   琎
++kk    丂
++kkb   瓆
++kkkb  瓆
++kkl   兓
++kkmr  劕
++kko   啠
++kla   璙
++klbj  卙
++klrj  卙
++knpb  瑸
++knrr  琓
++kpf   琒
++kpfj  璍
++kqa   尵
++kqn   尲
++krjq  璍
++krlj  卙
++krrj  璍
++krrq  璍
++krt   尮
++kse   珰
++kso   珰
++ksu   琑
++kttb  璴
++kttz  璴
++ktz   璴
++kvf   璑
++kvff  璑
++kwt   颋
++kwtb  颋
++kxmb  瓆
++kypf  珯
++kzo   黇
++ladf  黡
++ladh  慭
++ladh  懕
++laxf  厐
++lba   耲
++lbaa  瘹
++lbbb  疭
++lbbt  癊
++lbbu  癊
++lbcf  痆
++lbdm  痬
++lbe   痬
++lbea  竴
++lbeh  憠
++lbeh  癋
++lbeo  麏
++lbf   疜
++lbhr  痜
++lbhz  痜
++lbih  癴
++lbkj  疩
++lblh  癴
++lbls  麖
++lbls  癝
++lblv  癕
++lbmd  癎
++lbmp  癁
++lbnc  瘒
++lboh  癋
++lbqs  癳
++lbqy  癦
++lbr   庎
++lbrd  瘄
++lbsh  癴
++lbum  瘮
++lbum  瘆
++lbus  瘮
++lbvx  癁
++lbxa  疷
++lbxe  疷
++lcl   麳
++lcof  廤
++lcs   麨
++ldee  韷
++lden  韴
++lduh  懕
++lebe  鹒
++lebf  鹒
++lene  鹒
++lenf  鹒
++lfj   卛
++lfl   亪
++lfnf  鵉
++lfr   兏
++lft   庼
++lftb  庼
++lfz   亪
++lgb   耭
++lgj   厈
++lgl   厇
++lhb   廭
++lhhb  廭
++lkh   懬
++ll    乀
++ll    乁
++ll    乚
++llfk  耲
++lll   乵
++llob  廍
++lmp   彨
++lnh   稁
++lnjo  啇
++lnok  髛
++lnyk  亴
++loaa  磗
++loay  砛
++locs  磦
++locu  碿
++loe   礖
++loeg  硙
++loel  硙
++loem  磮
++loer  硚
++loeu  磘
++loey  硶
++lof   厑
++lofd  碶
++lofl  礏
++lofr  礏
++lofs  礏
++loft  礏
++lofu  磤
++logf  磶
++logr  硚
++loia  磗
++loib  碽
++lok   厛
++lokm  碷
++lolf  硛
++lolo  礳
++lomd  磵
++lomu  礀
++lomx  礟
++lonh  稁
++lonk  亴
++lonk  髛
++lonq  砽
++lonu  硡
++looc  郶
++looe  鹯
++loof  鹯
++lool  郶
++looo  硘
++lopu  磤
++lor   礶
++lorb  硔
++lorc  碸
++lord  碝
++lorv  礶
++lorx  碸
++losh  礃
++losr  硄
++lot   硧
++lotd  碝
++lotq  硧
++loui  硁
++louu  磘
++low   砙
++loyf  硳
++loyf  硓
++loyi  硁
++loys  砞
++loz   乭
++lozj  亸
++lozx  硵
++lp    丆
++lpds  厵
++lpdw  厡
++lpl   麳
++lps   麨
++lpu   庅
++lqb   畒
++lqn   豙
++lqt   顡
++lqtb  顡
++lrd   劥
++lreh  懬
++lrj   竎
++lsp   竗
++lta   顂
++lti   耓
++ltmb  顂
++ltth  厯
++luem  廫
++lull  龖
++lulr  龏
++lwb   耭
++lwwb  耭
++lxj   竔
++lxzr  虠
++lzbj  亸
++lzdj  竨
++lzrf  鷉
++mad   糩
++mada  糩
++makp  眬
++maqd  糩
++mat   閝
++maxf  眬
++mba   糫
++mba   阛
++mbbb  閦
++mbbk  賆
++mbem  賿
++mbfd  贌
++mbkt  贘
++mbla  賘
++mblx  賋
++mblx  賿
++mbmp  贁
++mbn   閄
++mbru  贎
++mbsb  贘
++mbst  贘
++mbt   糩
++mbvy  贎
++mcd   瞮
++mceb  瞆
++mceb  阓
++mcew  粶
++mck   斴
++mcn   粎
++mco   閪
++mcsk  斴
++mcsu  糏
++mda   粏
++mdee  阘
++mdj   閗
++mdmr  覸
++mdnf  鷼
++mdnm  睗
++mds   睲
++mdyy  睳
++med   驲
++meeh  骕
++meei  骕
++meeu  骎
++mefl  闿
++mejd  骙
++mejn  骙
++mel   骍
++meme  骉
++mens  骔
++meod  骃
++mep   睗
++meum  骦
++mew   粶
++mfd   驲
++mfd   闦
++mfeh  骕
++mfei  骕
++mfek  糫
++mfek  阛
++mfeu  骎
++mff   驋
++mfjd  骙
++mfjn  骙
++mfju  驋
++mfl   骍
++mfmf  騳
++mfmf  骉
++mfns  骔
++mfo   闙
++mfo   粬
++mfod  骃
++mfop  闙
++mfpo  闙
++mfum  骦
++mfw   遤
++mfy   眆
++mfyt  驝
++mgj   闬
++mhmb  瞔
++mia   彵
++miaa  馎
++miai  衑
++miat  衑
++mics  徱
++miep  幑
++miew  徤
++miez  徰
++mifi  衐
++mift  衐
++miia  馎
++mij   徝
++mijh  憄
++miji  衠
++mijm  徝
++mijs  徚
++mijt  衠
++mijz  徢
++mik   彺
++minp  幑
++mio   訚
++mird  徣
++mire  鸻
++mirf  鴴
++mirf  鸻
++mirz  徔
++mis   瞓
++mitd  勶
++miwi  讏
++miwz  躛
++miyf  馌
++miyr  徺
++miyy  徍
++mizz  徢
++mla   矖
++mlen  矋
++mllb  矖
++mlru  矋
++mlu   矋
++mlvy  矋
++mmb   閴
++mmmu  矡
++mmnf  鷪
++mmp   毝
++mneo  眮
++mnht  矃
++mnm   毱
++mno   眗
++mnt   矃
++mon   糫
++mon   阛
++mpdw  闎
++mph   愗
++mpmf  矈
++mpv   闎
++mqa   瞆
++mqa   阓
++mrc   闏
++mrfm  矒
++mrod  闦
++mror  粬
++mrr   盶
++mrr   糥
++mrup  糤
++mrx   糤
++mrxo  睰
++mrxx  覐
++mrz   覎
++msa   毜
++mst   颣
++mstb  颣
++mtf   盨
++mtg   媭
++mtmf  盨
++mtmf  頾
++mtmw  澃
++mtnr  糥
++mtup  瞮
++mtw   澃
++mtx   瞮
++mtzf  頾
++mudm  毶
++muds  毶
++mue   眀
++muum  毶
++muus  毶
++mvn   贌
++mxfp  糭
++mxx   眂
++myow  闧
++mypd  阇
++mypf  粩
++mys   眜
++myw   闧
++nad   宊
++nao   匌
++nbdm  赗
++nbgo  窹
++nbn   赒
++nbnb  赑
++nbne  窎
++nbno  赒
++nbrg  窛
++nbso  竆
++nbst  窼
++nbzj  窧
++nce   宐
++nch   寭
++ncpe  鹓
++ncpf  鹓
++ncqd  勨
++ncrs  幖
++ncuh  寭
++ndx   勨
++nei   冚
++nevm  觽
++nfd   帿
++nfpo  鴼
++nfru  鸌
++nge   臽
++ngne  鹐
++ngnf  鹐
++niao  饸
++nid   饾
++niee  饳
++nig   饦
++nilk  饻
++nio   訚
++nipo  饹
++niqt  馃
++niqu  馉
++nit   饤
++niup  馂
++njh   寭
++njj   宑
++njq   弿
++njqh  寭
++nll   寴
++nlp   厃
++nltr  寴
++nmcs  幱
++nmjs  幱
++nmn   宩
++nmn   幱
++nnbf  烉
++nnc   寏
++nne   夨
++nnnd  寏
++nnrf  烉
++noes  宺
++not   宲
++npdu  匓
++npfd  帿
++npvf  宱
++nre   冃
++nrgo  窹
++nrif  鵼
++nrne  窎
++nrrg  窛
++nrsf  鶎
++nrso  竆
++nrst  窼
++nrz   觃
++nrzj  窧
++nsmr  覙
++nsnh  幥
++nsp   觘
++nst   幉
++ntt   冧
++nve   隺
++nvm   觹
++nxx   罓
++nxx   觗
++nxxq  羀
++nypz  宯
++oaja  圑
++oao   嚸
++oaqe  爴
++oba   囨
++obap  唥
++obat  唥
++obcg  嘦
++obew  嗞
++obku  嗴
++obm   唨
++obnp  啳
++obor  哾
++obqj  啴
++obth  圙
++obv   嘦
++ocjo  啹
++odc   嗮
++ode   哣
++odp   叧
++oed   圕
++oely  嘊
++oenb  唡
++oeo   呞
++oewd  嗘
++oezl  啂
++ofa   嚋
++ofbd  哛
++ofbw  嚺
++ofc   啰
++ofe   囙
++ofy   圐
++ofz   呝
++ogqf  嚑
++ohe   爴
++oia   圑
++oimb  唝
++oinb  唝
++ojd   唞
++ojeg  啛
++ojg   啛
++okae  爴
++okne  鸮
++oknf  鸮
++olad  嚈
++oldd  嚈
++olp   攺
++olth  嚤
++olto  嚰
++olv   囄
++olww  嗞
++olxv  囄
++omee  翤
++omia  嘚
++omiz  嘥
++ommw  遦
++onad  囐
++one   鹮
++oneh  喼
++onf   鹮
++oob   呮
++ooka  啯
++ooqo  嘼
++oorp  卾
++oorr  覨
++opa   咃
++opdj  唕
++opi   卾
++opl   啳
++opto  哬
++oqfo  嚸
++oqne  鹠
++oqnf  鹠
++orcy  嚡
++orfr  囕
++org   嚿
++orvg  嚿
++orvr  囕
++orww  嗞
++osaa  嚩
++osia  嚩
++osny  嘡
++oss   噝
++otk   唽
++otmq  嘠
++oua   囜
++ouaq  嚱
++own   遦
++owpg  嘙
++owuh  嚹
++oxb   喐
++oxmw  遦
++oxub  喐
++oya   嚋
++oya   哋
++oyeo  呞
++oyn   嚈
++oyya  嚋
++oyyp  啩
++ozae  蹹
++ozbo  踎
++ozcl  蹮
++ozdq  嚱
++ozds  蹽
++ozdw  跶
++ozed  囐
++ozee  踭
++ozfq  嚱
++ozfv  囖
++ozl   蹽
++ozlp  蹾
++ozlq  蹱
++ozo   躀
++ozob  躀
++ozq   嚱
++ozrt  跥
++ozyd  踷
++paa   卪
++paja  牔
++pare  翶
++paxi  侙
++pba   乊
++pbgo  倽
++pbue  傟
++pbuh  倊
++pbz   乥
++pccs  僲
++pcew  儙
++pcj   伡
++pdbe  翶
++pdbm  傄
++pdc   皅
++pdcc  偧
++pdd   劰
++pde   仾
++pdep  皧
++pdev  侸
++pdev  皠
++pdfp  皍
++pdh   皧
++pdhb  皟
++pdjr  倴
++pdpy  皨
++pdqr  皢
++pduv  皬
++pdw   廹
++pdwe  翶
++pdyr  皢
++pdys  皌
++pei   屲
++pfee  傓
++pfnn  僀
++pfpo  衉
++pgb   僟
++pgl   仛
++pgu   伮
++phur  儬
++pia   傠
++pia   牔
++pip   敒
++piqp  敒
++pjac  傤
++pjnz  侼
++pleq  牗
++plg   倿
++plk   儣
++pll   傡
++pln   俫
++plno  傐
++plo   佦
++ploo  傐
++plp   伌
++plp   儣
++plps  傆
++plrb  儣
++plt   僺
++pmdf  臰
++pml   臫
++pmnf  臱
++pmqg  鼼
++pmqr  鼿
++pmr   伣
++pmrf  鷱
++pmwf  鷱
++pna   仢
++pnbo  僒
++pnf   鸊
++pnl   佨
++pnol  佨
++pnr   伣
++pnro  僒
++po    亇
++pomb  傊
++poot  僺
++ppm   俢
++ppo   臵
++pqd   侽
++pqo   傐
++pqo   甶
++pqu   傦
++prb   倻
++psnn  僀
++puc   儙
++pvdo  倁
++pwb   僟
++pwn   乑
++pwwb  僟
++pwx   伩
++pxq   伡
++pya   傆
++pyh   俧
++pypk  侤
++pzcm  儏
++qamt  椝
++qant  椝
++qap   獜
++qat   獜
++qbef  獈
++qbku  獇
++qbny  畻
++qck   髛
++qdem  畼
++qdg   貋
++qdk   貇
++qdvm  畼
++qeh   彇
++qeot  鬶
++qeot  鬹
++qep   畼
++qeqe  疅
++qev   獕
++qfao  黬
++qfb   猠
++qfk   黬
++qfzf  黸
++qi    冎
++qiee  翈
++qja   獖
++qjrb  獖
++qkb   猉
++qln   猍
++qlop  獤
++qlos  猄
++qls   猄
++qlzp  獤
++qmc   獜
++qmcs  獜
++qna   犳
++qndl  猽
++qne   犳
++qnmt  鬹
++qnmt  椝
++qnnt  椝
++qnrs  猔
++qns   狝
++qns   猔
++qnub  颙
++qnut  颙
++qocd  勥
++qqk   弜
++qqq   獴
++qqqm  氎
++qre   弫
++qre   弬
++qrnq  獴
++qrob  猠
++qrs   猅
++qrss  猅
++qst   弽
++quax  骮
++quj   弙
++qunl  骲
++ququ  髃
++qura  骪
++quu   骬
++qvd   矤
++qwd   狕
++qzc   獹
++qzqf  獹
++ratw  蒁
++rbbq  蕐
++rbd   聁
++rbef  凲
++rby   蓤
++rbyp  蓤
++rcau  颰
++rcb   茒
++rcbe  鞧
++rccb  鞼
++rcd   苆
++rcdf  鞰
++rce   靵
++rceg  鞖
++rceq  飅
++rcni  韂
++rcps  虄
++rcq   鞼
++rcqn  颫
++rct   鞕
++rctx  鞕
++rcv   韂
++rcvz  颴
++rcyo  囏
++rdds  繤
++rdjr  莾
++rdn   芖
++rduu  蓢
++rdw   荙
++rebq  蕐
++reg   蓞
++reqh  蕏
++reqo  黇
++rff   丣
++rffk  蕽
++rfhb  蘔
++rfht  蘔
++rfmb  蕒
++rfn   炗
++rfnc  薥
++rfr   苉
++rfs   茮
++rgj   芉
++rgr   聣
++rha   忈
++rhfm  藊
++rhka  萟
++rhmb  蔶
++rhnl  蘒
++rhpg  薭
++rhu   聙
++rhz   萟
++riqo  黇
++riqx  茰
++rjuq  萚
++rkj   茾
++rkw   迃
++rlby  薼
++rlnh  藳
++rlno  蔐
++rloh  藳
++rmbr  荝
++rmd   蕳
++rmw   蒾
++rnb   茓
++rnbb  萞
++rnbr  荝
++rncr  莬
++rndh  憥
++rnds  藔
++rnj   芇
++rnl   藔
++rnnr  葪
++rnq   苚
++rnq   茐
++rnr   葪
++rnre  鹲
++rnrf  鹲
++rnrp  蔲
++rodr  莂
++rol   巸
++rorr  觍
++rpc   茽
++rpdd  藠
++rpff  蒊
++rpo   茊
++rpok  藵
++rpqu  聭
++rpr   芿
++rpur  聭
++rqbo  黇
++rqh   蕏
++rqn   凲
++rqnf  鶓
++rqx   茰
++rqyd  蕏
++rre   亖
++rre   茝
++rrl   芁
++rrof  莻
++rrok  蕽
++rruo  兘
++rrz   芁
++rsaa  禣
++rsbw  禌
++rsfu  禙
++rsia  禣
++rske  祍
++rsmf  祃
++rso   聕
++rsob  祦
++rsod  祦
++rsog  祦
++rsoo  祻
++rspg  禆
++rsqu  禑
++rsrw  禌
++rsw   祎
++rsye  祃
++rta   耺
++rta   頣
++rtd   凮
++rtdp  蘷
++rtk   萙
++rtmb  頣
++rtnr  萙
++rtqo  黇
++rtw   蒁
++rty   荰
++rubf  虅
++rud   荕
++rueu  叆
++ruew  叇
++ruuc  蘎
++ruul  蘎
++rux   臤
++ruz   孯
++rva   聭
++rvu   蒦
++rweu  蓡
++rwh   萕
++rwkt  蒅
++rwn   辸
++rwpd  萡
++rwpg  蔢
++rwr   蓡
++rwwf  鷀
++rxdq  飗
++rxem  飏
++rxo   蔐
++rxoq  飗
++rxqh  飔
++rxup  葼
++rxym  飏
++rxzo  飐
++rynn  羐
++rys   苿
++sa    糹
++saq   牫
++saqn  絾
++saqy  絾
++say   絾
++sbbo  绤
++sbbz  緃
++sbd   躮
++scf   縇
++scl   紦
++sdah  躵
++sdf   缊
++sdsr  縨
++seaf  繎
++see   亖
++sek   躼
++serb  黋
++serb  尡
++serk  黋
++sers  韑
++serw  韑
++sewd  縘
++sfa   軇
++sfl   牤
++shde  縆
++shee  縆
++sisj  卛
++sj    牜
++sjf   繎
++ske   纴
++skj   紣
++skn   躼
++slad  軄
++sldk  缞
++slhp  犜
++sll   兂
++slop  犜
++slor  綂
++slr   綂
++slzp  犜
++smbd  勚
++smr   覍
++snbd  勚
++snbf  繎
++sndh  憥
++sne   纻
++sne   峃
++snee  縇
++snf   鵢
++snne  鸴
++snnf  鸴
++snor  劏
++snri  躻
++snsx  龞
++snwu  绹
++snzp  敩
++snzp  斆
++sob   軄
++sobf  缊
++spad  絥
++spdw  缐
++spe   绖
++sqer  綥
++sqi   纼
++sqqs  纝
++src   绬
++src   緓
++sri   劏
++srpw  纄
++srsb  酂
++ssno  緔
++ssu   甧
++sto   牱
++suaf  繎
++sv    缐
++swo   绤
++sxu   纮
++sydo  繥
++syoo  繥
++syya  軇
++szf   紪
++tad   枤
++tadu  樃
++tag   楲
++taop  椧
++taqg  楲
++tau   樃
++tbqj  椫
++tcb   桞
++tcch  槵
++tcmb  槚
++tcnb  槚
++tcw   梿
++tdep  皶
++tdx   勈
++tdx   勶
++tea   桪
++teee  榋
++teee  橻
++ten   枛
++tenu  叆
++teww  叇
++tfad  棙
++tff   桛
++tff   椖
++tfj   榌
++tfl   杧
++tfpr  橷
++tfy   堏
++thd   楿
++tjn   杮
++tjn   枾
++tkby  樭
++tky   樭
++tlba  榌
++tld   櫦
++tleb  椩
++tlen  椩
++tln   梾
++tlow  梈
++tlw   梈
++tlya  櫉
++tlyp  櫦
++tmpo  櫊
++tn    朩
++tnae  枬
++tnfh  櫶
++tnh   櫶
++tnhh  櫶
++tni   枾
++tnle  枬
++tnlj  枬
++tnm   椬
++tnqd  勈
++tnsr  櫶
++tnx   櫷
++toop  欕
++tox   欕
++tp    丆
++tpad  栿
++tpdr  橷
++tpot  椺
++tpv   梻
++tqu   畵
++trar  欌
++trbc  檋
++trt   桗
++trup  橵
++trvf  櫵
++trvg  欍
++trw   柡
++trx   橵
++tse   栍
++tudm  椮
++tuds  椮
++tum   椮
++tun   櫲
++tun   栐
++tunq  櫲
++tuut  槡
++tuw   逳
++tvr   槜
++txoo  槗
++txqw  梿
++txxa  欎
++txxa  鐢
++tyh   梽
++tyq   榸
++tzba  榌
++tzfs  橴
++tzh   櫖
++tzl   朰
++tzqh  櫖
++tzz   朰
++uanf  靎
++uax   肞
++uaxh  脦
++ubh   羘
++ubk   肹
++ubnf  鰧
++ubnn  幐
++ubnt  榺
++ucs   腖
++udi   腨
++udil  奙
++udql  奙
++ueah  鳡
++ueb   脼
++ueb   鲙
++ueba  鳉
++uebf  鳒
++uebt  鲙
++uec   鲃
++ueca  鳚
++uecl  鲃
++ued   鱽
++uedf  鳁
++uedz  鳀
++uee   鲀
++ueed  鳛
++ueeo  鲪
++ueeq  鲾
++uefl  鱾
++uefo  鲘
++ueg   鳑
++ueiq  鲉
++uekb  鲯
++uekh  鳡
++uele  鳣
++uelf  鳑
++uemr  鲗
++uenb  脼
++ueno  鲖
++uenr  鲗
++uep   鲏
++uepd  鲌
++uepw  鳈
++ueq   鳒
++ueqk  鳂
++uer   腨
++ueru  鳠
++uest  鲿
++uet   鲬
++ueto  鲄
++uetq  鲬
++uetr  腨
++ueum  鲹
++ueus  鲹
++uevf  鲊
++uewd  膎
++ueyk  鲓
++uezb  鳤
++ufa   鯎
++ufah  鱤
++ufah  鳡
++ufan  鯎
++ufap  魿
++ufat  魿
++ufau  鮁
++ufay  鯎
++ufb   魜
++ufb   魞
++ufb   魮
++ufb   鱛
++ufb   鲙
++ufba  鳉
++ufbd  鱛
++ufbe  鱃
++ufbf  鳒
++ufbk  鮩
++ufbp  鮷
++ufbr  魪
++ufbt  鲙
++ufbw  鰦
++ufc   鰪
++ufc   鲃
++ufca  鳚
++ufcl  鲃
++ufd   靊
++ufd   鱽
++ufdd  鱪
++ufdf  鳁
++ufdh  鱪
++ufdk  鮬
++ufdm  鰑
++ufdz  鳀
++ufe   鮧
++ufe   鰑
++ufe   鲀
++ufed  鳛
++ufeg  鮾
++ufen  魳
++ufeo  鲪
++ufep  鱫
++ufeq  鰏
++ufeq  鲾
++ufeu  鮼
++uffd  靊
++uffd  鱰
++uffd  朥
++uffh  鱰
++uffl  魢
++uffl  鱾
++uffo  鮜
++uffo  鲘
++ufg   鳑
++ufga  鱂
++ufh   鯺
++ufh   鱫
++ufhg  鯘
++ufid  靊
++ufiq  鲉
++ufj   鳀
++ufjb  鮧
++ufkb  鲯
++ufkh  鱤
++ufkh  鳡
++uflc  鯴
++ufle  鯳
++ufle  鳣
++uflf  鳑
++ufm   魹
++ufmf  鰢
++ufmr  鲗
++ufne  鰚
++ufnf  鷠
++ufno  鲖
++ufnp  鰘
++ufnr  鲗
++ufoo  鮰
++ufoo  鯝
++ufp   魸
++ufp   鮍
++ufp   鲏
++ufpd  鮊
++ufpd  鮲
++ufpd  鲌
++ufpu  魥
++ufpw  鰁
++ufpw  鳈
++ufpx  鮘
++ufq   鳒
++ufqk  鰃
++ufqk  鳂
++ufro  鰙
++ufrr  魭
++ufru  鳠
++ufrw  鰦
++ufs   鱲
++ufsr  鮏
++ufsr  鯯
++ufss  鱲
++ufst  鲿
++uft   鮷
++uft   鲬
++ufto  鲄
++uftq  鲬
++ufuc  鰠
++ufum  鲹
++ufus  鲹
++ufvf  鲊
++ufwb  鱜
++ufwf  鰞
++ufx   鱜
++ufxu  鰖
++ufyd  鯺
++ufyf  鰪
++ufyk  鮳
++ufyk  鲓
++ufyz  鯐
++ufzb  鳤
++ufzc  鯴
++ufzf  鯭
++ugx   孁
++uhk   脿
++uiqr  腗
++ujcs  脨
++ujqs  腖
++uleo  膅
++uloz  朜
++umk   膶
++unb   贠
++unka  靌
++unkb  靌
++uoed  脵
++uogn  脵
++uoka  腘
++uoog  孁
++upzw  脠
++uqdg  貋
++usa   厼
++usd   劺
++usl   朑
++usrb  臜
++utm   脜
++utme  鹴
++utmf  鹴
++uua   厸
++uuu   厽
++uuu   霡
++uvdw  逘
++uvk   脿
++uvs   脌
++uvs   脨
++uwfo  噕
++uwfw  爳
++uwk   霃
++uwnr  霃
++uxl   奙
++uyoo  囏
++vaa   襨
++vaqr  裓
++vaxu  袯
++vbhi  褨
++vcc   袳
++vdi   褍
++vdz   矪
++ver   褍
++vetr  褍
++vfa   襨
++vfea  襨
++vgq   褈
++vhi   褨
++vif   燞
++vii   亇
++vjcb  襰
++vje   褠
++vjny  褠
++vmcs  襕
++vmd   襇
++vmd   鬝
++vmjs  襕
++vmu   鬜
++vnae  袇
++vnc   裈
++vnl   袇
++vnxq  裈
++voms  緐
++voxs  鬛
++vpa   袝
++vpf   裇
++vqj   襅
++vqrq  襅
++vreb  襔
++vrrr  襵
++vsiw  遬
++vsl   髰
++vsx   裑
++vua   襨
++vvb   襰
++vvsb  襰
++vwa   襨
++vwi   袆
++vws   髿
++wadk  斏
++wakz  乼
++wan   斏
++waxb  赟
++waxu  韨
++wbbb  潨
++wbea  澊
++wbue  鹡
++wbuf  鹡
++wca   蚃
++wca   瀭
++wcar  蚉
++wcar  瀭
++wck   泦
++wcnb  浕
++wdto  渏
++wdz   孧
++wedb  潉
++wee   孒
++wepf  溄
++wfdf  灎
++wfeq  潈
++wffa  灐
++wfif  灎
++wfmk  潨
++wfnb  潨
++wfoa  灜
++wfoz  灜
++wfpb  潨
++wfq   潈
++wfqn  潨
++wfua  灜
++wfuz  灜
++wgi   湼
++wgkf  澙
++wgp   漖
++wha   忢
++wjr   泋
++wke   峾
++wkkc  潖
++wleo  瀒
++wll   浐
++wlor  渷
++wlow  涥
++wlp   浐
++wlu   瓪
++wlw   涥
++wlxp  滧
++wmg   溇
++wn    氺
++wnbp  潌
++wne   鹀
++wneu  濅
++wnf   鹀
++wnhq  澝
++wnn   汣
++wnrp  潌
++wnrq  溕
++wns   沵
++wofu  溊
++womb  涢
++wonb  涢
++woo   噕
++woo   叾
++wosj  韠
++wosq  韛
++wosq  韠
++wox   溊
++wpaq  浌
++wpbn  浉
++wpfq  潨
++wpnk  澚
++wpot  湺
++wqbp  溭
++wqfy  濹
++wqj   韠
++wqjq  韠
++wqo   畓
++wqrj  韠
++wqrp  溭
++wrao  濸
++wren  浉
++wrj   斊
++wrnt  溁
++wrof  灎
++wrpq  韛
++wrt   颒
++wrtb  颒
++wruf  溋
++wrx   沨
++wseq  湽
++wsz   乷
++wttd  澘
++wued  澛
++wufd  澛
++wui   缼
++wuo   罆
++wuob  罆
++wup   缷
++wur   罀
++wurb  罀
++wush  罉
++wut   滪
++wutb  滪
++wutt  瀮
++wux   叏
++wvo   渏
++wwi   爳
++wwnb  赟
++wxv   灜
++wxxp  漖
++wye   汈
++wyen  浉
++wypp  漖
++xa    飠
++xaja  馎
++xao   餄
++xao   饸
++xbm   飻
++xbn   飤
++xbs   飻
++xde   饾
++xdjr  餴
++xee   饳
++xek   餦
++xfsv  饠
++xgl   饦
++xia   馎
++xjck  饢
++xjj   氒
++xlk   餏
++xlk   饻
++xn    飠
++xpo   饹
++xpo   餎
++xqj   饆
++xqrj  饆
++xqt   馃
++xqu   馉
++xri   剦
++xrup  饊
++xtde  餷
++xti   饤
++xurp  馂
++xyuf  馌
++yaw   逇
++yaxu  坺
++ybef  塧
++ycra  墛
++ycru  殸
++ydb   堒
++ydjd  鼟
++ydw   垯
++ydw   墶
++yelg  堓
++yeru  塅
++yfpe  嶅
++yfpf  鷔
++yfzb  赪
++yga   坬
++ygl   圫
++ygn   坬
++yha   懕
++yhl   塂
++yisq  壪
++ylfq  塆
++ylfq  壪
++ymeo  垇
++ynb   坹
++ynbd  堗
++ynbo  埛
++ynd   堗
++yndf  鷧
++yndp  皼
++yne   鹢
++ynee  塇
++ynee  壸
++ynef  壸
++ynf   鹢
++ynrd  堗
++ynro  埛
++ynt   坾
++yox   垊
++ypdk  斱
++ypdz  乽
++ypi   壭
++ypko  耉
++ypp   耂
++ypx   耂
++yrbp  塂
++yrfs  塃
++yrl   圥
++yryf  驇
++ysa   塮
++ysab  膥
++yse   垱
++ysiq  壪
++ysno  埫
++ysno  壋
++yso   堖
++yso   壋
++ysof  唜
++yspx  堖
++yueo  垇
++yui   凷
++yuo   垇
++yuof  唟
++yuw   迲
++yxe   丒
++yxup  堫
++yy    乛
++yybw  墶
++yyca  夀
++yyd   劸
++yyoc  郌
++yyw   墶
++yyy   厵
++yzde  疍
++yzlk  褺
++yzr   趰
++yzrd  趞
++zaaq  篯
++zaci  籨
++zadc  蠞
++zadi  籨
++zadk  艆
++zai   籨
++zan   艆
++zaoi  籨
++zasi  籨
++zbb   篵
++zbuk  龂
++zbuz  龁
++zcjo  艍
++zcm   篃
++zcoc  簄
++zcol  簄
++zcp   箼
++zda   舦
++zdfc  蠞
++zdi   篅
++zdp   笷
++zds   篂
++zduc  蠞
++zer   篅
++zetr  篅
++zez   筟
++zfe   笽
++zfkb  簱
++zfnd  箺
++zfnf  鴜
++zfqi  筪
++zfu   箶
++zfvz  籎
++zfz   籎
++zgc   蠞
++zgq   箽
++zha   孞
++zhmb  歵
++zj    卂
++zjab  籡
++zjac  籡
++zjae  籡
++zjd   艠
++zjeq  籒
++zjo   籡
++zjon  箉
++zjou  箶
++zjoy  箉
++zka   釻
++zleo  篖
++zln   筙
++zlp   笇
++zlru  艔
++zmd   鼑
++zmie  箻
++zmiz  篵
++zmj   笧
++zmmu  籰
++zmz   篵
++znby  壡
++zndz  箰
++zne   鸼
++zney  壡
++znf   鸼
++znjy  簺
++znu   肻
++zoed  筽
++zog   筽
++zoi   籨
++zokb  筽
++zokd  筽
++zonb  筼
++zopx  卥
++zoq   卥
++zoxp  鹷
++zoxt  鹷
++zoxu  禼
++zoxy  鹶
++zpax  笩
++zpbl  辪
++zpo   笿
++zpt   筿
++zqe   艃
++zqo   卨
++zrcd  簕
++zrsw  簶
++zruc  螌
++zrvu  籆
++zrvu  艧
++zse   筜
++zta   頉
++ztdq  籕
++ztfn  篐
++ztkb  簯
++ztmb  頉
++ztoq  籕
++zts   艈
++zubk  龂
++zubz  龁
++zufk  齭
++zug   齨
++zunc  齳
++zuo   孡
++zupg  簲
++zupj  簲
++zuts  齽
++zutw  齽
++zvu   篗
++zwp   箥
++zxn   篒
++zxp   笌
++zxvn  籂
++zyya  篈
++zz    乀
++zz    乁
++zzz   孨
++,ei   乀
++,ei   乁
++,g    巜
++# 中醫藥罕用字
++obx   㕮
++sss   犇
++ujmb  䐜
++ujb   䐜
++lbmg  瘻
++rgo   苷
++axg   甙
++gkf   舃
++gnf   舃
++lbhb  㿗
++lbht  㿗
++vdb   裩
++lrfc  䗪
++mmk   瞤
++hrok  憹
++srod  軆
++sfd   軆
+ %chardef end
