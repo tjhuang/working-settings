@@ -1,0 +1,15 @@
+#!/bin/sh
+
+NOTIFY_API=""
+
+[ "$IFACE" = "eth0" ] && {
+	ipaddr=$(ip -4 addr show dev $IFACE | awk '/inet/ {print $2}')
+
+	[ -n "$ipaddr" ] && {
+		channel="#notification"
+		host="MyMachine"
+		text="$host get IP address: $ipaddr on $IFACE"
+
+		curl -X POST --data-urlencode "payload={\"channel\":\"$channel\",\"text\":\"$text\"}" $NOTIFY_API
+	}
+}

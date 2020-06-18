@@ -7,3 +7,5 @@ The bunch of settings used in working, include
   - screenrc
 * tmux
   - tmux.conf
+* SourceInsight
+* IoT-notify (Debian network if-up.d)
