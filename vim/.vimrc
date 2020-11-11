@@ -58,6 +58,12 @@ autocmd BufRead,BufNewFile *.py		set tabstop=4
 autocmd BufRead,BufNewFile *.py		set shiftwidth=4
 autocmd BufRead,BufNewFile *.py		set filetype=python
 
+" Configure Robot syntax
+autocmd BufRead,BufNewFile *.robot	set smartindent
+autocmd BufRead,BufNewFile *.robot	set expandtab
+autocmd BufRead,BufNewFile *.robot	set tabstop=4
+autocmd BufRead,BufNewFile *.robot	set shiftwidth=4
+
 " Set cursor line
 set cursorline
 highlight CursorLine cterm=none ctermbg=darkblue ctermfg=230
@@ -128,7 +134,7 @@ autocmd BufRead,BufNewFile *.py		map <F5> :% w !clear; python<CR>
 autocmd BufRead,BufNewFile *.sh		map <F5> :% w !clear; sh<CR>
 
 if has("autocmd")
-autocmd BufRead *.txt set tw=78
+autocmd BufRead *.txt set tw=150
 autocmd BufReadPost *
 \ if line("'\"") > 0 && line ("'\"") <= line("$") |
 \   exe "normal g'\"" |
